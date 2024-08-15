@@ -27,7 +27,7 @@ function showMessage(message, divId){
     messageDiv.style.opacity=1;
     setTimeout(function(){
         messageDiv.style.opacity=0;
-    },5000);
+    },7000);
  }
 
 const signUp=document.getElementById('submitSignUp');
