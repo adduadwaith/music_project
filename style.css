@@ -12,7 +12,7 @@ body{
     
 }
 .container{
-    background:#fff;
+    background:rgba(54, 54, 74, 0.96);
     width:450px;
     padding:1.5rem;
     margin:50px auto;
@@ -69,6 +69,7 @@ form{
     text-align:center;
     padding:1.3rem;
     margin-bottom:0.4rem;
+    color: aqua;
 }
 input{
     color:inherit;
