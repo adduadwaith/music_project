@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,35 +7,41 @@
     <title>Register & Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="firebase.js"></script>
+    
 </head>
 <body>
     <div class="container" id="signup" style="display:none;">
-      <h1 class="form-title">Register</h1>
-      <form method="post" action="">
-        <div id="signUpMessage" class="messageDiv"></div>
-        <div class="input-group">
-           <i class="fas fa-user"></i>
-           <input type="text"  id="fName" placeholder="First Name" required>
-           <label for="fname">First Name</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-user"></i>
-            <input type="text"  id="lName" placeholder="Last Name" required>
-            <label for="lName">Last Name</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-envelope"></i>
-            <input type="email"  id="rEmail" placeholder="Email" required>
-            <label for="rEmail">Email</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-lock"></i>
-            <input type="password" id="rPassword"  placeholder="Password" required>
-            <label for="rPassword">Password</label>
-        </div>
-       <button class="btn" id="submitSignUp" >Sign Up</button>
-      </form>
+    <h1 class="form-title">Register</h1>
+<form method="post" action="register.php">
+    <div id="signUpMessage" class="messageDiv"></div>
+    
+    <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="fName" name="fName" placeholder="First Name" required>
+        <label for="fName">First Name</label>
+    </div>
+    
+    <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="lName" name="lName" placeholder="Last Name" required>
+        <label for="lName">Last Name</label>
+    </div>
+    
+    <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="rEmail" name="email" placeholder="Email" required>
+        <label for="rEmail">Email</label>
+    </div>
+    
+    <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="rPassword" name="password" placeholder="Password" required>
+        <label for="rPassword">Password</label>
+    </div>
+    
+    <button class="btn" id="submitSignUp" name="signUp">Sign Up</button>
+</form>
+
       <p class="or">
         ----------or--------
       </p>
@@ -50,23 +57,23 @@
 
   <div class="container" id="signIn">
         <h1 class="form-title">Sign In</h1>
-        <form method="post" action="">
+        <form method="post" action="login.php">
           <div id="signInMessage" class="messageDiv"></div>
 
           <div class="input-group">
               <i class="fas fa-envelope"></i>
-              <input type="email"  id="email" placeholder="Email" required>
+              <input type="email" name="email"  id="email" placeholder="Email" required>
               <label for="email">Email</label>
           </div>
           <div class="input-group">
               <i class="fas fa-lock"></i>
-            <input type="password" id="password"  placeholder="Password" required>
+            <input type="password" id="password" name="password"  placeholder="Password" required>
               <label for="password">Password</label>
           </div>
           <p class="recover">
             <a href="#">Recover Password</a>
           </p>
-         <button  class="btn"  id="submitSignIn">Sign In</button>
+         <button  class="btn" name="signIn"  id="submitSignIn">Sign In</button>
         </form>
         <p class="or">
           ----------or--------

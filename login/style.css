@@ -189,6 +189,47 @@ button:hover{
         margin: 215px auto;
         border-radius: 10px;
         box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+
     
+    }
+
+    #signIn.container{
+        position: relative;
+    }
+    
+    #signUp.container{
+        position: relative;
+    }
+    
+    
+    #signUpMessage.messageDiv{
+        display: none;
+        position: absolute;
+        opacity: 0;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f0f0f0;
+        padding:6px 15px;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgb(0, 0, 0, 0.2);
+        transition: opacity 1s;
+    }
+    
+    
+    
+    
+    #signInMessage.messageDiv{
+        display: none;
+        position: absolute;
+        opacity: 0;
+        top: 17px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f0f0f0;
+        padding:6px 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgb(0, 0, 0, 0.2);
+        transition: opacity 1s;
     }
 }

@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles for the header */
+
+
+body {
+    background-image: url('../homepage1/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+header {
+    background-color: black;
+    color: purple;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: -143px;
+}
+
+nav.main-nav
+{
+    margin-left:-25px;
+}
+
+/* Navigation starts right after the site name */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: auto; /* Pushes auth buttons to the far right */
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.auth-buttons .signup {
+    background-color: purple;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Sidebar styles for mobile (now sliding from right to left) */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: purple;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.sidebar .closebtn {
+    top: 2px;
+    left: 187px;
+    font-size: 44px;
+    color: rgb(211 12 203);
+    position: relative;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+}
+
+/*artist section */
+
+.popular-artists {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.artist-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-left: 45px;
+}
+
+.artist {
+    min-width: 150px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+
+
+.artist img {
+    width: 100%;
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+}
+
+
+.popular-artists p{
+color: aliceblue;
+}
+
+
+/*track section */
+
+.track-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tracks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.track {
+/*   width: 100px; 
+    height: 100px; */
+
+
+    background-color: purple;
+    color: white;
+   
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.track:hover {
+    background-color: darkviolet;
+}
+
+
+.track-section,.popular-artists h2{
+    color: aliceblue;
+}
+
+
+@media (min-width:800px) {
+
+    .track {
+        width:200px; /* Set a fixed width */
+        height:200px; /* Set a fixed height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+       
+    }
+    
+}
+
+@media (max-width:800px) {
+
+    .track {
+        width:100px; /* Set a fixed width */
+        height:100px; /* Set a fixed height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+       
+    }
+    
+}
+
+@media (max-width:500px) {
+
+    .track {
+        width:150px; /* Set a fixed width */
+        height:150px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 25px;
+
+       
+    }
+    
+}
+
+
+
